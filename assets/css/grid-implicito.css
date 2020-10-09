@@ -11,9 +11,9 @@ body {
     grid-template-columns: [inicio] 1fr [linea1] 1fr [linea2] 1fr [linea3] 1fr [destacado-end] 1fr [linea5] 1fr [destacado2-end] 1fr [linea7] 1fr [final];
     height: 100vh;
     gap: 5px;
-    /* Columnas implícitas */
-    grid-auto-flow: column;
-    grid-auto-columns: 200px;
+    /* Filas implícitas */
+    grid-auto-flow: row;
+    grid-auto-rows: 200px;
 }
 
 .item {
