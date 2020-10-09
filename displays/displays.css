@@ -1,0 +1,26 @@
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    color: blue;
+}
+
+.container {
+    display: grid;
+    /*grid-template-rows: 300px 150px 180px;
+    grid-template-columns: 25% 200px 50%;*/
+
+    /* grid-template: filas / columnas; */
+    grid-template: 30% 50% 20% / 20% 40% 40%;
+}
+
+.item {
+    background: lightblue;
+    padding: 10px;
+    border: 1px solid blue; 
+}
+.item:nth-of-type(4) {
+    background: blue;
+    color: white;
+    overflow: auto;
+    display: grid;
+    grid-template: 30% 50% / 20% 40% 40%;
+}
