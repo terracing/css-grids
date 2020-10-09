@@ -1,0 +1,29 @@
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    color: blue;
+}
+
+.container {
+    display: grid;
+    /*grid-template-rows: 300px 150px 180px;
+    grid-template-columns: 25% 200px 50%;*/
+
+    /* grid-template: filas / columnas; */
+    /* grid-template: 20% 40% 20% 20% / 1fr 1fr 1fr; */
+    grid-template: 20% 40% 20% 20% / repeat(3,minmax(100px,1fr));
+    column-gap: 1%;
+    row-gap: 1%;
+}
+
+.item {
+    background: lightblue;
+    padding: 10px;
+    border: 1px solid blue;
+}
+.item:nth-of-type(4) {
+    background: blue;
+    color: white;
+    overflow: auto;
+    display: grid;
+    grid-template: 30% 50% / 20% 40% 40%;
+}
