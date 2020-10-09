@@ -1,0 +1,15 @@
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    color: blue;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 25% 200px 25%;
+}
+
+.item {
+    background: lightblue;
+    padding: 10px;
+    border: 1px solid blue;
+}
